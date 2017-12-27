@@ -1,18 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
+import { FormsModule }    from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 
-import { AppComponent } from './app.component';
+import { AppRoutingModule }     from './app-routing.module';
+import { SidebarModule } from './sidebar/sidebar.module';
+import { AppComponent }         from './app.component';
+import { DashboardComponent }   from './dashboard/dashboard.component';
 
+import { DataSecurityComponent } from './data-security/data-security.component';
+import { CartComponent } from './cart/cart.component';
+import { CreditcardComponent } from './creditcard/creditcard.component';
+import { CustomersupportComponent } from './customersupport/customersupport.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    SidebarModule
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+   
+  ],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    DataSecurityComponent,
+    CartComponent,
+    CreditcardComponent,
+    CustomersupportComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -1,0 +1,49 @@
+<div id="wrapper">
+  <div id="sidebar-wrapper">
+      <aside id="sidebar">
+          <ul id="sidemenu" class="sidebar-nav">
+              <li>
+                  <a href="#">
+                      <span class="sidebar-icon"><i class="fa fa-dashboard"></i></span>
+                      <span class="sidebar-title">Home</span>
+                  </a>
+              </li>
+              <li>
+                 <a href="#">
+                      <span class="sidebar-icon"><i class="fa fa-lock"></i></span>
+                      <span class="sidebar-title"><a routerLink="/data-security" >Data Security Data Capture</a></span>
+                     </a>
+                  
+                 
+              </li>
+              <li>
+                 <a href="#">
+                      <span class="sidebar-icon"><i class="fa fa-shopping-cart"></i></span>
+                      <span class="sidebar-title"><a routerLink="/cart" >Cart Screen</a></span>
+                     </a>
+                  
+                 
+              </li>
+              <li>
+                 <a href="#">
+                      <span class="sidebar-icon"><i class="fa fa-credit-card"></i></span>
+                      <span class="sidebar-title"><a routerLink="/creditcard" >Credit Card Owner</a></span>
+                     
+                     </a>
+                 
+              </li>
+              <li>
+                 <a href="#">
+                      <span class="sidebar-icon"><i class="fa fa-user"></i></span>
+                      <span class="sidebar-title"><a routerLink="/customersupport" >Customer Support Manager</a></span>
+                     </a>
+                  
+                 
+              </li>
+          </ul>
+      </aside>            
+  </div>
+  <main id="page-content-wrapper" role="main">
+     <router-outlet></router-outlet>
+  </main>
+</div> 
