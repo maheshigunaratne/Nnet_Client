@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-import { DatasecuritydatacaptureComponent } from './datasecuritydatacapture/datasecuritydatacapture.component';
+import { DataSecurityComponent } from './data-security/data-security.component';
 import { CartComponent } from './cart/cart.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
 import { CustomersupportComponent } from './customersupport/customersupport.component';
@@ -11,7 +11,7 @@ import { CustomersupportComponent } from './customersupport/customersupport.comp
 
 
 const routes: Routes =[
-    { path: 'datasecuritydatacapture',component: DatasecuritydatacaptureComponent },
+    { path: 'datasecuritydatacapture',component: DataSecurityComponent },
     { path: 'cartscreen', component: CartComponent },
     { path: 'creditcardowner',component: CreditcardComponent },
     { path: 'customersupportmanager',component: CustomersupportComponent },
