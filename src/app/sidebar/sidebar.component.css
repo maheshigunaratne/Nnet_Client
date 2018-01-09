@@ -84,6 +84,9 @@
     color: #428bca;
 }
 
+#sidebar-wrapper .sidebar-nav li a span {
+    display: inline-block;
+}
 .sidebar-nav li:first-child a {
     background: #92bce0 !important;
     color: #fff !important;
@@ -98,7 +101,7 @@
     text-indent: 7px;
     margin-right: 10px;
     color: #fff;
-    float: left;
+    
 }
 
 #sidebar-wrapper .sidebar-nav li a .caret {

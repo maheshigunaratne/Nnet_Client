@@ -9,10 +9,14 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 
+
 import { DataSecurityComponent } from './data-security/data-security.component';
 import { CartComponent } from './cart/cart.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
 import { CustomersupportComponent } from './customersupport/customersupport.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import {SelectModule} from 'ng2-select';
+
 
 @NgModule({
   imports: [
@@ -20,7 +24,8 @@ import { CustomersupportComponent } from './customersupport/customersupport.comp
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    SidebarModule
+    SidebarModule,
+    SelectModule
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
@@ -32,7 +37,9 @@ import { CustomersupportComponent } from './customersupport/customersupport.comp
     DataSecurityComponent,
     CartComponent,
     CreditcardComponent,
-    CustomersupportComponent
+    CustomersupportComponent,
+    SearchBarComponent
+  
   ],
   providers: [],
   bootstrap: [ AppComponent ]
